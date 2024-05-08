@@ -2,8 +2,20 @@
 
 [node name="Main" type="Node2D"]
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_right = 576.0
-offset_bottom = 1024.0
-color = Color(0.492384, 0.897322, 0.784008, 1)
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Background" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Background"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 14.4
+anchor_bottom = 25.6
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.427451, 0.807843, 0.772549, 1)
 metadata/_edit_use_anchors_ = true
