@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://djuweofsolxsd"
-path="res://.godot/imported/MouldyCheeseRegular-WyMWG.ttf-bfb1d165685a4bab7024821d591a673f.fontdata"
+uid="uid://d4lo3evi21cam"
+path="res://.godot/imported/RobotoCondensedItalic-e5A6.ttf-4eb520f7def1c0978721cc92e3099ee2.fontdata"
 
 [deps]
 
-source_file="res://Assets/mouldy-cheese-font/MouldyCheeseRegular-WyMWG.ttf"
-dest_files=["res://.godot/imported/MouldyCheeseRegular-WyMWG.ttf-bfb1d165685a4bab7024821d591a673f.fontdata"]
+source_file="res://Assets/roboto-font/RobotoCondensedItalic-e5A6.ttf"
+dest_files=["res://.godot/imported/RobotoCondensedItalic-e5A6.ttf-4eb520f7def1c0978721cc92e3099ee2.fontdata"]
 
 [params]
 

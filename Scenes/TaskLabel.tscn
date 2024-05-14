@@ -1,0 +1,51 @@
+[gd_scene load_steps=5 format=3 uid="uid://d0qg0lb8xfxjc"]
+
+[ext_resource type="FontFile" uid="uid://bt2lxfub8m73q" path="res://Assets/roboto-font/RobotoBold-Xdoj.ttf" id="1_7barn"]
+[ext_resource type="Script" path="res://Scripts/TaskLabel.gd" id="2_ridyq"]
+
+[sub_resource type="FontVariation" id="FontVariation_6v748"]
+base_font = ExtResource("1_7barn")
+spacing_glyph = 2
+
+[sub_resource type="FontVariation" id="FontVariation_vcebc"]
+base_font = ExtResource("1_7barn")
+spacing_glyph = 2
+
+[node name="TaskLabel" type="Label"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -337.0
+offset_right = 337.0
+offset_bottom = 53.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.795387, 0.742578, 0.462503, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("FontVariation_6v748")
+theme_override_font_sizes/font_size = 60
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+script = ExtResource("2_ridyq")
+
+[node name="DeleteLabel" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -86.0
+offset_top = -41.5
+offset_bottom = 41.5
+grow_horizontal = 0
+grow_vertical = 2
+focus_mode = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("FontVariation_vcebc")
+theme_override_font_sizes/font_size = 60
+text = "✓"
+
+[connection signal="pressed" from="DeleteLabel" to="." method="_on_delete_label_pressed"]
