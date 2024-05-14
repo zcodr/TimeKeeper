@@ -115,8 +115,57 @@ theme_override_fonts/font = SubResource("FontVariation_pmqn7")
 theme_override_font_sizes/font_size = 45
 text = ">"
 
-[node name="Control" type="Control" parent="CanvasLayer/UI/VBoxContainer"]
-layout_mode = 2
+[node name="NextDay" type="Button" parent="CanvasLayer/UI"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -113.0
+offset_top = 8.0
+offset_right = -16.0
+offset_bottom = 102.0
+grow_horizontal = 0
+focus_mode = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("FontVariation_pmqn7")
+theme_override_font_sizes/font_size = 45
+text = "->"
+
+[node name="PreviousDay" type="Button" parent="CanvasLayer/UI"]
+layout_mode = 1
+offset_left = 16.0
+offset_top = 8.0
+offset_right = 113.0
+offset_bottom = 102.0
+focus_mode = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("FontVariation_pmqn7")
+theme_override_font_sizes/font_size = 45
+text = "<-"
+
+[node name="Calendar" type="Button" parent="CanvasLayer/UI"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -48.5
+offset_top = -94.0
+offset_right = 48.5
+grow_horizontal = 2
+grow_vertical = 0
+focus_mode = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("FontVariation_pmqn7")
+theme_override_font_sizes/font_size = 45
+text = "[ | ]"
 
 [connection signal="text_submitted" from="CanvasLayer/UI/VBoxContainer/TextField" to="." method="_on_text_field_text_submitted"]
 [connection signal="pressed" from="CanvasLayer/UI/VBoxContainer/TextField/AddTask" to="." method="_on_add_task_pressed"]
+[connection signal="pressed" from="CanvasLayer/UI/NextDay" to="." method="_on_next_day_pressed"]
+[connection signal="pressed" from="CanvasLayer/UI/PreviousDay" to="." method="_on_previous_day_pressed"]

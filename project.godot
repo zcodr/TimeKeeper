@@ -12,6 +12,8 @@ config_version=5
 
 config/name="Time Keeper"
 run/main_scene="res://Scenes/Main.tscn"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="SaveData-Zsyed"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://Assets/icon.svg"
 
@@ -34,6 +36,10 @@ folder_colors={
 "res://Scenes/": "blue",
 "res://Scripts/": "red"
 }
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
 
 [rendering]
 
