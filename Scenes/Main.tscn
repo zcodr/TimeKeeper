@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://b028rjc2ujpiy"]
+[gd_scene load_steps=7 format=3 uid="uid://b028rjc2ujpiy"]
 
 [ext_resource type="FontFile" uid="uid://bt2lxfub8m73q" path="res://Assets/roboto-font/RobotoBold-Xdoj.ttf" id="1_0cutj"]
 [ext_resource type="Script" path="res://Scripts/Main.gd" id="1_t4p4q"]
@@ -10,8 +10,19 @@ spacing_glyph = 2
 [sub_resource type="StyleBoxLine" id="StyleBoxLine_jbd1s"]
 thickness = 3
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k6gsd"]
+bg_color = Color(0.568627, 0.764706, 0.701961, 1)
+
+[sub_resource type="FontVariation" id="FontVariation_qmmac"]
+base_font = ExtResource("1_0cutj")
+spacing_glyph = 4
+
 [node name="Main" type="Node2D"]
 script = ExtResource("1_t4p4q")
+
+[node name="location_request" type="HTTPRequest" parent="."]
+
+[node name="prayer_request" type="HTTPRequest" parent="."]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -79,9 +90,9 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -337.0
-offset_top = 202.0
+offset_top = 266.0
 offset_right = 337.0
-offset_bottom = 954.0
+offset_bottom = 1018.0
 grow_horizontal = 2
 theme_override_constants/separation = 20
 
@@ -145,19 +156,16 @@ theme_override_fonts/font = SubResource("FontVariation_pmqn7")
 theme_override_font_sizes/font_size = 45
 text = "<-"
 
-[node name="Calendar" type="Button" parent="CanvasLayer/UI"]
-visible = false
+[node name="ViewCalendar" type="Button" parent="CanvasLayer/UI"]
 layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -48.5
-offset_top = -94.0
-offset_right = 48.5
-grow_horizontal = 2
-grow_vertical = 0
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -113.0
+offset_top = 112.0
+offset_right = -16.0
+offset_bottom = 206.0
+grow_horizontal = 0
 focus_mode = 0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
@@ -165,7 +173,291 @@ theme_override_fonts/font = SubResource("FontVariation_pmqn7")
 theme_override_font_sizes/font_size = 45
 text = "[ | ]"
 
+[node name="ViewPrayers" type="Button" parent="CanvasLayer/UI"]
+layout_mode = 1
+offset_left = 16.0
+offset_top = 112.0
+offset_right = 113.0
+offset_bottom = 206.0
+focus_mode = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("FontVariation_pmqn7")
+theme_override_font_sizes/font_size = 45
+text = "{^}"
+
+[node name="CalendarPanel" type="Panel" parent="CanvasLayer/UI"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_k6gsd")
+
+[node name="CloseCalendar" type="Button" parent="CanvasLayer/UI/CalendarPanel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -116.0
+offset_top = 16.0
+offset_right = -24.0
+offset_bottom = 107.0
+grow_horizontal = 0
+focus_mode = 0
+theme_override_fonts/font = SubResource("FontVariation_qmmac")
+theme_override_font_sizes/font_size = 70
+text = "x"
+
+[node name="NextMonth" type="Button" parent="CanvasLayer/UI/CalendarPanel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -116.0
+offset_top = 129.0
+offset_right = -24.0
+offset_bottom = 220.0
+grow_horizontal = 0
+focus_mode = 0
+theme_override_fonts/font = SubResource("FontVariation_qmmac")
+theme_override_font_sizes/font_size = 70
+text = ">"
+
+[node name="PreviousMonth" type="Button" parent="CanvasLayer/UI/CalendarPanel"]
+layout_mode = 1
+offset_left = 32.0
+offset_top = 136.0
+offset_right = 124.0
+offset_bottom = 227.0
+focus_mode = 0
+theme_override_fonts/font = SubResource("FontVariation_qmmac")
+theme_override_font_sizes/font_size = 70
+text = "<"
+
+[node name="Title" type="Label" parent="CanvasLayer/UI/CalendarPanel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -312.5
+offset_top = 56.0
+offset_right = 312.5
+offset_bottom = 156.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.134631, 0.740328, 3.89976e-07, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("FontVariation_pmqn7")
+theme_override_font_sizes/font_size = 60
+text = "Calendar"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MonthLabel" type="Label" parent="CanvasLayer/UI/CalendarPanel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -312.5
+offset_top = 150.0
+offset_right = 312.5
+offset_bottom = 250.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.134631, 0.740328, 3.89976e-07, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("FontVariation_pmqn7")
+theme_override_font_sizes/font_size = 50
+text = "Month"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="CanvasLayer/UI/CalendarPanel/MonthLabel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -204.5
+offset_top = 27.0
+offset_right = 210.5
+offset_bottom = 59.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/separator = SubResource("StyleBoxLine_jbd1s")
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/UI/CalendarPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -280.0
+offset_top = -280.0
+offset_right = 280.0
+offset_bottom = 280.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 15
+theme_override_constants/v_separation = 40
+columns = 7
+
+[node name="PrayerPanel" type="Panel" parent="CanvasLayer/UI"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_k6gsd")
+
+[node name="ClosePrayers" type="Button" parent="CanvasLayer/UI/PrayerPanel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -116.0
+offset_top = 16.0
+offset_right = -24.0
+offset_bottom = 107.0
+grow_horizontal = 0
+focus_mode = 0
+theme_override_fonts/font = SubResource("FontVariation_qmmac")
+theme_override_font_sizes/font_size = 70
+text = "x"
+
+[node name="Current" type="Label" parent="CanvasLayer/UI/PrayerPanel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -312.5
+offset_top = 150.0
+offset_right = 312.5
+offset_bottom = 250.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.134631, 0.740328, 3.89976e-07, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("FontVariation_pmqn7")
+theme_override_font_sizes/font_size = 50
+text = "Current"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Next" type="Label" parent="CanvasLayer/UI/PrayerPanel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -312.5
+offset_top = 318.0
+offset_right = 312.5
+offset_bottom = 418.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.134631, 0.740328, 3.89976e-07, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("FontVariation_pmqn7")
+theme_override_font_sizes/font_size = 50
+text = "Next"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/UI/PrayerPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 30
+
+[node name="Fajr" type="Label" parent="CanvasLayer/UI/PrayerPanel/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.134631, 0.740328, 3.89976e-07, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = SubResource("FontVariation_pmqn7")
+theme_override_font_sizes/font_size = 30
+text = "Fajr"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sunrise" type="Label" parent="CanvasLayer/UI/PrayerPanel/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.134631, 0.740328, 3.89976e-07, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = SubResource("FontVariation_pmqn7")
+theme_override_font_sizes/font_size = 30
+text = "Sunrise"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Dhuhr" type="Label" parent="CanvasLayer/UI/PrayerPanel/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.134631, 0.740328, 3.89976e-07, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = SubResource("FontVariation_pmqn7")
+theme_override_font_sizes/font_size = 30
+text = "Dhuhr"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Asr" type="Label" parent="CanvasLayer/UI/PrayerPanel/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.134631, 0.740328, 3.89976e-07, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = SubResource("FontVariation_pmqn7")
+theme_override_font_sizes/font_size = 30
+text = "Asr"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Maghrib" type="Label" parent="CanvasLayer/UI/PrayerPanel/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.134631, 0.740328, 3.89976e-07, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = SubResource("FontVariation_pmqn7")
+theme_override_font_sizes/font_size = 30
+text = "Maghrib"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Isha" type="Label" parent="CanvasLayer/UI/PrayerPanel/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.134631, 0.740328, 3.89976e-07, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = SubResource("FontVariation_pmqn7")
+theme_override_font_sizes/font_size = 30
+text = "Isha"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [connection signal="text_submitted" from="CanvasLayer/UI/VBoxContainer/TextField" to="." method="_on_text_field_text_submitted"]
 [connection signal="pressed" from="CanvasLayer/UI/VBoxContainer/TextField/AddTask" to="." method="_on_add_task_pressed"]
 [connection signal="pressed" from="CanvasLayer/UI/NextDay" to="." method="_on_next_day_pressed"]
 [connection signal="pressed" from="CanvasLayer/UI/PreviousDay" to="." method="_on_previous_day_pressed"]
+[connection signal="pressed" from="CanvasLayer/UI/ViewCalendar" to="." method="_on_view_calendar_pressed"]
+[connection signal="pressed" from="CanvasLayer/UI/ViewPrayers" to="." method="_on_view_prayers_pressed"]
+[connection signal="pressed" from="CanvasLayer/UI/CalendarPanel/CloseCalendar" to="." method="_on_close_calendar_pressed"]
+[connection signal="pressed" from="CanvasLayer/UI/CalendarPanel/NextMonth" to="." method="_on_next_month_pressed"]
+[connection signal="pressed" from="CanvasLayer/UI/CalendarPanel/PreviousMonth" to="." method="_on_previous_month_pressed"]
+[connection signal="pressed" from="CanvasLayer/UI/PrayerPanel/ClosePrayers" to="." method="_on_close_prayers_pressed"]
