@@ -6,7 +6,7 @@ var cal = Calendar.new()
 @onready var color_rect = $ColorRect
 @onready var color_rect_2 = $ColorRect2
 
-func _process(delta):
+func _process(_delta):
 	if (date.year == cal.get_today().year) and (date.month == cal.get_today().month) and (date.day == cal.get_today().day):
 		color_rect.visible = true
 	else:
