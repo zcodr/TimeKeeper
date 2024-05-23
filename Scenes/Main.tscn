@@ -15,7 +15,7 @@ spacing_glyph = 2
 thickness = 3
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k6gsd"]
-bg_color = Color(0.568627, 0.764706, 0.701961, 1)
+bg_color = Color(1, 1, 1, 1)
 
 [sub_resource type="FontVariation" id="FontVariation_qmmac"]
 base_font = ExtResource("1_0cutj")
@@ -45,7 +45,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.567176, 0.763721, 0.703398, 1)
 
 [node name="UI" type="Control" parent="CanvasLayer"]
 layout_mode = 3
@@ -65,7 +64,8 @@ offset_top = 57.0
 offset_right = 312.5
 offset_bottom = 157.0
 grow_horizontal = 2
-theme_override_colors/font_color = Color(0.134631, 0.740328, 3.89976e-07, 1)
+scale = Vector2(1, 1.00165)
+theme_override_colors/font_color = Color(0, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
@@ -271,7 +271,7 @@ offset_top = 56.0
 offset_right = 312.5
 offset_bottom = 156.0
 grow_horizontal = 2
-theme_override_colors/font_color = Color(0.134631, 0.740328, 3.89976e-07, 1)
+theme_override_colors/font_color = Color(0, 0.741233, 0.890987, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
@@ -290,7 +290,7 @@ offset_top = 150.0
 offset_right = 312.5
 offset_bottom = 250.0
 grow_horizontal = 2
-theme_override_colors/font_color = Color(0.134631, 0.740328, 3.89976e-07, 1)
+theme_override_colors/font_color = Color(0, 0.741233, 0.890987, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
@@ -375,7 +375,7 @@ theme_override_constants/separation = 80
 
 [node name="Current" type="Label" parent="CanvasLayer/UI/PrayerPanel/VBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.134631, 0.740328, 3.89976e-07, 1)
+theme_override_colors/font_color = Color(0, 0.741233, 0.890987, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
@@ -386,7 +386,7 @@ vertical_alignment = 1
 
 [node name="Next" type="Label" parent="CanvasLayer/UI/PrayerPanel/VBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.134631, 0.740328, 3.89976e-07, 1)
+theme_override_colors/font_color = Color(0, 0.741233, 0.890987, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
@@ -414,7 +414,7 @@ columns = 3
 
 [node name="Fajr" type="Label" parent="CanvasLayer/UI/PrayerPanel/HBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.134631, 0.740328, 3.89976e-07, 1)
+theme_override_colors/font_color = Color(0, 0.741233, 0.890987, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
@@ -425,7 +425,7 @@ vertical_alignment = 1
 
 [node name="Sunrise" type="Label" parent="CanvasLayer/UI/PrayerPanel/HBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.134631, 0.740328, 3.89976e-07, 1)
+theme_override_colors/font_color = Color(0, 0.741233, 0.890987, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
@@ -436,7 +436,7 @@ vertical_alignment = 1
 
 [node name="Dhuhr" type="Label" parent="CanvasLayer/UI/PrayerPanel/HBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.134631, 0.740328, 3.89976e-07, 1)
+theme_override_colors/font_color = Color(0, 0.741233, 0.890987, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
@@ -447,7 +447,7 @@ vertical_alignment = 1
 
 [node name="Asr" type="Label" parent="CanvasLayer/UI/PrayerPanel/HBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.134631, 0.740328, 3.89976e-07, 1)
+theme_override_colors/font_color = Color(0, 0.741233, 0.890987, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
@@ -458,7 +458,7 @@ vertical_alignment = 1
 
 [node name="Maghrib" type="Label" parent="CanvasLayer/UI/PrayerPanel/HBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.134631, 0.740328, 3.89976e-07, 1)
+theme_override_colors/font_color = Color(0, 0.741233, 0.890987, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
@@ -469,7 +469,7 @@ vertical_alignment = 1
 
 [node name="Isha" type="Label" parent="CanvasLayer/UI/PrayerPanel/HBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.134631, 0.740328, 3.89976e-07, 1)
+theme_override_colors/font_color = Color(0, 0.741233, 0.890987, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
