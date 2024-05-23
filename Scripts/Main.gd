@@ -63,8 +63,10 @@ func prayer_request(_results, _response_code, _headers, body):
 	
 func location_request(_results, _response_code, _headers, body):
 	var json = JSON.parse_string(body.get_string_from_utf8())
-	prayer_url = "http://api.aladhan.com/v1/timings/:date?latitude=" + str(json["lat"]) + "&longitude=" + str(json["lon"]) + "&method=2"
-	
+	var today = Time.get_date_string_from_system()
+	var today_split = today.split("-")
+	var today_string = today_split[2] + "-" + today_split[1] + "-" + today_split[0]
+	prayer_url = "http://api.aladhan.com/v1/timings/:date=" + today_string + "?latitude=" + str(json["lat"]) + "&longitude=" + str(json["lon"]) + "&method=2"
 	prayer.request_completed.connect(prayer_request)
 	send_request(prayer, prayer_url)
 	
@@ -185,6 +187,7 @@ func _on_add_task_pressed():
 	Global.tasks[date_selected].append(text_field.text)
 	text_field.clear()
 	load_day(date_selected)
+	Global.save_app()
 
 func _on_text_field_text_submitted(_new_text):
 	_on_add_task_pressed()

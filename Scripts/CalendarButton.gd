@@ -23,3 +23,4 @@ func _process(_delta):
 func _on_pressed():
 	get_tree().current_scene.load_day(cal.get_date_formatted(date.year, date.month, date.day))
 	get_tree().current_scene._on_close_calendar_pressed()
+	
