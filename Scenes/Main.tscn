@@ -1,12 +1,16 @@
-[gd_scene load_steps=13 format=3 uid="uid://b028rjc2ujpiy"]
+[gd_scene load_steps=15 format=3 uid="uid://b028rjc2ujpiy"]
 
 [ext_resource type="FontFile" uid="uid://bt2lxfub8m73q" path="res://Assets/roboto-font/RobotoBold-Xdoj.ttf" id="1_0cutj"]
 [ext_resource type="Script" path="res://Scripts/Main.gd" id="1_t4p4q"]
 [ext_resource type="FontFile" uid="uid://co4510l2aveet" path="res://Assets/roboto-font/RobotoRegular-3m4L.ttf" id="2_ora6a"]
+[ext_resource type="Texture2D" uid="uid://buyrcatvpsji5" path="res://Assets/landscape.png" id="2_r3rkd"]
 [ext_resource type="Texture2D" uid="uid://1erfalruo6p7" path="res://Assets/arrowhead-thin-outline-to-the-left-svgrepo-com.svg" id="3_tnv78"]
 [ext_resource type="Texture2D" uid="uid://ckr4duyr71kiw" path="res://Assets/islamic-pray-svgrepo-com (3).svg" id="3_vfpup"]
 [ext_resource type="Texture2D" uid="uid://bwemoot5ht1wa" path="res://Assets/calendar-alt-svgrepo-com (4).svg" id="5_1no17"]
 [ext_resource type="Texture2D" uid="uid://dagfikybl4ab4" path="res://Assets/cross-svgrepo-com (2).svg" id="6_22g3n"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_jomx0"]
+blend_mode = 1
 
 [sub_resource type="FontVariation" id="FontVariation_pmqn7"]
 base_font = ExtResource("2_ora6a")
@@ -42,13 +46,18 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control"]
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control"]
+material = SubResource("CanvasItemMaterial_jomx0")
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -590.0
+offset_right = 610.0
+offset_bottom = 255.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("2_r3rkd")
 
 [node name="UI" type="Control" parent="CanvasLayer"]
 layout_mode = 3
