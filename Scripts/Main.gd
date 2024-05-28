@@ -32,6 +32,8 @@ var date_selected
 var month_selected
 var todays_timings = []
 
+var ByteBrew
+
 func _ready():
 	location.request_completed.connect(location_request)
 	send_request(location, location_url)
@@ -93,22 +95,22 @@ func _process(_delta):
 				which_prayer = i
 		match which_prayer:
 			0:
-				cur_text = "Current\n\nFajr"
+				cur_text = "Current\nFajr"
 				next_text = "Ends at " + mil_stand(todays_timings[1])
 			1:
 				cur_text = " "
-				next_text = "Next\n\nDhuhr at " + mil_stand(todays_timings[2])
+				next_text = "Next\nDhuhr at " + mil_stand(todays_timings[2])
 			2:
-				cur_text = "Current\n\nDhuhr"
-				next_text = "Next\n\nAsr at " + mil_stand(todays_timings[3])
+				cur_text = "Current\nDhuhr"
+				next_text = "Next\nAsr at " + mil_stand(todays_timings[3])
 			3:
-				cur_text = "Current\n\nAsr"
-				next_text = "Next\n\nMaghrib at " + mil_stand(todays_timings[4])
+				cur_text = "Current\nAsr"
+				next_text = "Next\nMaghrib at " + mil_stand(todays_timings[4])
 			4:
-				cur_text = "Current\n\nMaghrib"
-				next_text = "Next\n\nIsha at " + mil_stand(todays_timings[5])
+				cur_text = "Current\nMaghrib"
+				next_text = "Next\nIsha at " + mil_stand(todays_timings[5])
 			5:
-				cur_text = "Curent\n\nIsha"
+				cur_text = "Curent\nIsha"
 				next_text = "Ends at Midnight"
 			6:
 				cur_text = " "

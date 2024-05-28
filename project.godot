@@ -17,7 +17,6 @@ config/custom_user_dir_name="SaveData-Zsyed"
 config/features=PackedStringArray("4.2", "Mobile")
 boot_splash/bg_color=Color(1, 1, 1, 1)
 boot_splash/show_image=false
-config/icon="res://Assets/icon.svg"
 
 [autoload]
 

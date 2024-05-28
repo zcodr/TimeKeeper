@@ -1,18 +1,22 @@
-[gd_scene load_steps=11 format=3 uid="uid://b028rjc2ujpiy"]
+[gd_scene load_steps=13 format=3 uid="uid://b028rjc2ujpiy"]
 
 [ext_resource type="FontFile" uid="uid://bt2lxfub8m73q" path="res://Assets/roboto-font/RobotoBold-Xdoj.ttf" id="1_0cutj"]
 [ext_resource type="Script" path="res://Scripts/Main.gd" id="1_t4p4q"]
+[ext_resource type="FontFile" uid="uid://co4510l2aveet" path="res://Assets/roboto-font/RobotoRegular-3m4L.ttf" id="2_ora6a"]
 [ext_resource type="Texture2D" uid="uid://1erfalruo6p7" path="res://Assets/arrowhead-thin-outline-to-the-left-svgrepo-com.svg" id="3_tnv78"]
 [ext_resource type="Texture2D" uid="uid://ckr4duyr71kiw" path="res://Assets/islamic-pray-svgrepo-com (3).svg" id="3_vfpup"]
 [ext_resource type="Texture2D" uid="uid://bwemoot5ht1wa" path="res://Assets/calendar-alt-svgrepo-com (4).svg" id="5_1no17"]
 [ext_resource type="Texture2D" uid="uid://dagfikybl4ab4" path="res://Assets/cross-svgrepo-com (2).svg" id="6_22g3n"]
 
 [sub_resource type="FontVariation" id="FontVariation_pmqn7"]
-base_font = ExtResource("1_0cutj")
+base_font = ExtResource("2_ora6a")
 spacing_glyph = 2
 
 [sub_resource type="StyleBoxLine" id="StyleBoxLine_jbd1s"]
 thickness = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_os7vi"]
+bg_color = Color(0.221302, 0.221302, 0.221302, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k6gsd"]
 bg_color = Color(1, 1, 1, 1)
@@ -60,16 +64,14 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -312.5
-offset_top = 57.0
+offset_top = 41.0
 offset_right = 312.5
-offset_bottom = 157.0
+offset_bottom = 141.0
 grow_horizontal = 2
 scale = Vector2(1, 1.00165)
-theme_override_colors/font_color = Color(0, 1, 1, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 10
+theme_override_colors/font_color = Color(0, 0.741176, 0.890196, 1)
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
-theme_override_font_sizes/font_size = 75
+theme_override_font_sizes/font_size = 80
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -86,6 +88,7 @@ offset_right = 210.5
 offset_bottom = 115.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/separation = 80
 theme_override_styles/separator = SubResource("StyleBoxLine_jbd1s")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/UI"]
@@ -93,21 +96,19 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -337.0
-offset_top = 266.0
-offset_right = 337.0
-offset_bottom = 1018.0
+offset_left = -312.0
+offset_top = 274.0
+offset_right = 233.0
+offset_bottom = 1026.0
 grow_horizontal = 2
 theme_override_constants/separation = 20
 
 [node name="TaskContainer" type="VBoxContainer" parent="CanvasLayer/UI/VBoxContainer"]
 layout_mode = 2
-theme_override_constants/separation = 18
+theme_override_constants/separation = 30
 
 [node name="TextField" type="LineEdit" parent="CanvasLayer/UI/VBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 10
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
 theme_override_font_sizes/font_size = 75
 
@@ -118,9 +119,10 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -97.0
-offset_top = -47.5
-offset_bottom = 46.5
+offset_left = -1.0
+offset_top = -48.5
+offset_right = 96.0
+offset_bottom = 48.5
 grow_horizontal = 0
 grow_vertical = 2
 focus_mode = 0
@@ -128,6 +130,7 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
 theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxFlat_os7vi")
 text = ">"
 
 [node name="NextDay" type="Button" parent="CanvasLayer/UI"]
@@ -267,15 +270,13 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -312.5
-offset_top = 56.0
+offset_top = 48.0
 offset_right = 312.5
-offset_bottom = 156.0
+offset_bottom = 148.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0, 0.741233, 0.890987, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 10
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
-theme_override_font_sizes/font_size = 60
+theme_override_font_sizes/font_size = 80
 text = "Calendar"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -292,9 +293,8 @@ offset_bottom = 250.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0, 0.741233, 0.890987, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 10
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 60
 text = "Month"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -322,9 +322,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -280.0
-offset_top = -280.0
+offset_top = -208.0
 offset_right = 280.0
-offset_bottom = 280.0
+offset_bottom = 352.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/h_separation = 15
@@ -339,6 +339,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_k6gsd")
 
 [node name="ClosePrayers" type="Button" parent="CanvasLayer/UI/PrayerPanel"]
@@ -365,21 +366,20 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -89.0
-offset_top = -515.5
-offset_right = 89.0
-offset_bottom = -284.5
+offset_left = -138.5
+offset_top = -487.0
+offset_right = 138.5
+offset_bottom = -217.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 theme_override_constants/separation = 80
 
 [node name="Current" type="Label" parent="CanvasLayer/UI/PrayerPanel/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0.741233, 0.890987, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 10
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 75
 text = "Current"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -387,10 +387,8 @@ vertical_alignment = 1
 [node name="Next" type="Label" parent="CanvasLayer/UI/PrayerPanel/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0.741233, 0.890987, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 10
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 75
 text = "Next"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -403,11 +401,12 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -266.0
-offset_top = 19.0
+offset_top = 16.0
 offset_right = 266.0
-offset_bottom = 189.0
+offset_bottom = 208.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 theme_override_constants/h_separation = 50
 theme_override_constants/v_separation = 50
 columns = 3
@@ -415,8 +414,6 @@ columns = 3
 [node name="Fajr" type="Label" parent="CanvasLayer/UI/PrayerPanel/HBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0.741233, 0.890987, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 10
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
 theme_override_font_sizes/font_size = 50
 text = "Fajr"
@@ -426,8 +423,6 @@ vertical_alignment = 1
 [node name="Sunrise" type="Label" parent="CanvasLayer/UI/PrayerPanel/HBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0.741233, 0.890987, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 10
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
 theme_override_font_sizes/font_size = 50
 text = "Sunrise"
@@ -437,8 +432,6 @@ vertical_alignment = 1
 [node name="Dhuhr" type="Label" parent="CanvasLayer/UI/PrayerPanel/HBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0.741233, 0.890987, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 10
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
 theme_override_font_sizes/font_size = 50
 text = "Dhuhr"
@@ -448,8 +441,6 @@ vertical_alignment = 1
 [node name="Asr" type="Label" parent="CanvasLayer/UI/PrayerPanel/HBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0.741233, 0.890987, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 10
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
 theme_override_font_sizes/font_size = 50
 text = "Asr"
@@ -459,8 +450,6 @@ vertical_alignment = 1
 [node name="Maghrib" type="Label" parent="CanvasLayer/UI/PrayerPanel/HBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0.741233, 0.890987, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 10
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
 theme_override_font_sizes/font_size = 50
 text = "Maghrib"
@@ -470,8 +459,6 @@ vertical_alignment = 1
 [node name="Isha" type="Label" parent="CanvasLayer/UI/PrayerPanel/HBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0.741233, 0.890987, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 10
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
 theme_override_font_sizes/font_size = 50
 text = "Isha"
