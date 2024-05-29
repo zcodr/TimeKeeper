@@ -1,16 +1,13 @@
-[gd_scene load_steps=15 format=3 uid="uid://b028rjc2ujpiy"]
+[gd_scene load_steps=14 format=3 uid="uid://b028rjc2ujpiy"]
 
 [ext_resource type="FontFile" uid="uid://bt2lxfub8m73q" path="res://Assets/roboto-font/RobotoBold-Xdoj.ttf" id="1_0cutj"]
 [ext_resource type="Script" path="res://Scripts/Main.gd" id="1_t4p4q"]
 [ext_resource type="FontFile" uid="uid://co4510l2aveet" path="res://Assets/roboto-font/RobotoRegular-3m4L.ttf" id="2_ora6a"]
-[ext_resource type="Texture2D" uid="uid://buyrcatvpsji5" path="res://Assets/landscape.png" id="2_r3rkd"]
 [ext_resource type="Texture2D" uid="uid://1erfalruo6p7" path="res://Assets/arrowhead-thin-outline-to-the-left-svgrepo-com.svg" id="3_tnv78"]
 [ext_resource type="Texture2D" uid="uid://ckr4duyr71kiw" path="res://Assets/islamic-pray-svgrepo-com (3).svg" id="3_vfpup"]
 [ext_resource type="Texture2D" uid="uid://bwemoot5ht1wa" path="res://Assets/calendar-alt-svgrepo-com (4).svg" id="5_1no17"]
 [ext_resource type="Texture2D" uid="uid://dagfikybl4ab4" path="res://Assets/cross-svgrepo-com (2).svg" id="6_22g3n"]
-
-[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_jomx0"]
-blend_mode = 1
+[ext_resource type="Texture2D" uid="uid://dt7rx6yhkf6ve" path="res://Assets/landscape-removebg-preview.png" id="8_576iu"]
 
 [sub_resource type="FontVariation" id="FontVariation_pmqn7"]
 base_font = ExtResource("2_ora6a")
@@ -46,18 +43,13 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control"]
-material = SubResource("CanvasItemMaterial_jomx0")
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -590.0
-offset_right = 610.0
-offset_bottom = 255.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_r3rkd")
 
 [node name="UI" type="Control" parent="CanvasLayer"]
 layout_mode = 3
@@ -78,7 +70,7 @@ offset_right = 312.5
 offset_bottom = 141.0
 grow_horizontal = 2
 scale = Vector2(1, 1.00165)
-theme_override_colors/font_color = Color(0, 0.741176, 0.890196, 1)
+theme_override_colors/font_color = Color(0.180392, 0.282353, 0.54902, 1)
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
 theme_override_font_sizes/font_size = 80
 horizontal_alignment = 1
@@ -100,37 +92,38 @@ grow_vertical = 2
 theme_override_constants/separation = 80
 theme_override_styles/separator = SubResource("StyleBoxLine_jbd1s")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/UI"]
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/UI"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -312.0
+offset_left = -328.0
 offset_top = 274.0
-offset_right = 233.0
-offset_bottom = 1026.0
+offset_right = 329.0
+offset_bottom = 953.0
 grow_horizontal = 2
-theme_override_constants/separation = 20
+horizontal_scroll_mode = 0
 
-[node name="TaskContainer" type="VBoxContainer" parent="CanvasLayer/UI/VBoxContainer"]
+[node name="TaskContainer" type="VBoxContainer" parent="CanvasLayer/UI/ScrollContainer"]
 layout_mode = 2
+size_flags_horizontal = 3
 theme_override_constants/separation = 30
 
-[node name="TextField" type="LineEdit" parent="CanvasLayer/UI/VBoxContainer"]
+[node name="TextField" type="LineEdit" parent="CanvasLayer/UI/ScrollContainer/TaskContainer"]
+z_index = 2
 layout_mode = 2
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
 theme_override_font_sizes/font_size = 75
 
-[node name="AddTask" type="Button" parent="CanvasLayer/UI/VBoxContainer/TextField"]
+[node name="AddTask" type="Button" parent="CanvasLayer/UI/ScrollContainer/TaskContainer/TextField"]
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -1.0
+offset_left = -97.0
 offset_top = -48.5
-offset_right = 96.0
 offset_bottom = 48.5
 grow_horizontal = 0
 grow_vertical = 2
@@ -283,7 +276,7 @@ offset_top = 48.0
 offset_right = 312.5
 offset_bottom = 148.0
 grow_horizontal = 2
-theme_override_colors/font_color = Color(0, 0.741233, 0.890987, 1)
+theme_override_colors/font_color = Color(0.182127, 0.280721, 0.550566, 1)
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
 theme_override_font_sizes/font_size = 80
 text = "Calendar"
@@ -300,7 +293,7 @@ offset_top = 150.0
 offset_right = 312.5
 offset_bottom = 250.0
 grow_horizontal = 2
-theme_override_colors/font_color = Color(0, 0.741233, 0.890987, 1)
+theme_override_colors/font_color = Color(0.180392, 0.282353, 0.54902, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
 theme_override_font_sizes/font_size = 60
@@ -386,7 +379,7 @@ theme_override_constants/separation = 80
 
 [node name="Current" type="Label" parent="CanvasLayer/UI/PrayerPanel/VBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0.741233, 0.890987, 1)
+theme_override_colors/font_color = Color(0.180392, 0.282353, 0.54902, 1)
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
 theme_override_font_sizes/font_size = 75
 text = "Current"
@@ -395,7 +388,7 @@ vertical_alignment = 1
 
 [node name="Next" type="Label" parent="CanvasLayer/UI/PrayerPanel/VBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0.741233, 0.890987, 1)
+theme_override_colors/font_color = Color(0.180392, 0.282353, 0.54902, 1)
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
 theme_override_font_sizes/font_size = 75
 text = "Next"
@@ -422,7 +415,7 @@ columns = 3
 
 [node name="Fajr" type="Label" parent="CanvasLayer/UI/PrayerPanel/HBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0.741233, 0.890987, 1)
+theme_override_colors/font_color = Color(0.180392, 0.282353, 0.54902, 1)
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
 theme_override_font_sizes/font_size = 50
 text = "Fajr"
@@ -431,7 +424,7 @@ vertical_alignment = 1
 
 [node name="Sunrise" type="Label" parent="CanvasLayer/UI/PrayerPanel/HBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0.741233, 0.890987, 1)
+theme_override_colors/font_color = Color(0.180392, 0.282353, 0.54902, 1)
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
 theme_override_font_sizes/font_size = 50
 text = "Sunrise"
@@ -440,7 +433,7 @@ vertical_alignment = 1
 
 [node name="Dhuhr" type="Label" parent="CanvasLayer/UI/PrayerPanel/HBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0.741233, 0.890987, 1)
+theme_override_colors/font_color = Color(0.180392, 0.282353, 0.54902, 1)
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
 theme_override_font_sizes/font_size = 50
 text = "Dhuhr"
@@ -449,7 +442,7 @@ vertical_alignment = 1
 
 [node name="Asr" type="Label" parent="CanvasLayer/UI/PrayerPanel/HBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0.741233, 0.890987, 1)
+theme_override_colors/font_color = Color(0.180392, 0.282353, 0.54902, 1)
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
 theme_override_font_sizes/font_size = 50
 text = "Asr"
@@ -458,7 +451,7 @@ vertical_alignment = 1
 
 [node name="Maghrib" type="Label" parent="CanvasLayer/UI/PrayerPanel/HBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0.741233, 0.890987, 1)
+theme_override_colors/font_color = Color(0.180392, 0.282353, 0.54902, 1)
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
 theme_override_font_sizes/font_size = 50
 text = "Maghrib"
@@ -467,15 +460,90 @@ vertical_alignment = 1
 
 [node name="Isha" type="Label" parent="CanvasLayer/UI/PrayerPanel/HBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0.741233, 0.890987, 1)
+theme_override_colors/font_color = Color(0.180392, 0.282353, 0.54902, 1)
 theme_override_fonts/font = SubResource("FontVariation_pmqn7")
 theme_override_font_sizes/font_size = 50
 text = "Isha"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[connection signal="text_submitted" from="CanvasLayer/UI/VBoxContainer/TextField" to="." method="_on_text_field_text_submitted"]
-[connection signal="pressed" from="CanvasLayer/UI/VBoxContainer/TextField/AddTask" to="." method="_on_add_task_pressed"]
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -606.0
+offset_top = -624.0
+offset_right = 606.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+texture = ExtResource("8_576iu")
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -1817.0
+offset_top = -624.0
+offset_right = -605.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+texture = ExtResource("8_576iu")
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -3029.0
+offset_top = -624.0
+offset_right = -1817.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+texture = ExtResource("8_576iu")
+
+[node name="TextureRect4" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 606.0
+offset_top = -624.0
+offset_right = 1818.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+texture = ExtResource("8_576iu")
+
+[node name="TextureRect5" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 1817.0
+offset_top = -624.0
+offset_right = 3029.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+texture = ExtResource("8_576iu")
+
+[connection signal="text_submitted" from="CanvasLayer/UI/ScrollContainer/TaskContainer/TextField" to="." method="_on_text_field_text_submitted"]
+[connection signal="pressed" from="CanvasLayer/UI/ScrollContainer/TaskContainer/TextField/AddTask" to="." method="_on_add_task_pressed"]
 [connection signal="pressed" from="CanvasLayer/UI/NextDay" to="." method="_on_next_day_pressed"]
 [connection signal="pressed" from="CanvasLayer/UI/PreviousDay" to="." method="_on_previous_day_pressed"]
 [connection signal="pressed" from="CanvasLayer/UI/ViewCalendar" to="." method="_on_view_calendar_pressed"]
