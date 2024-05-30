@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.godot.game-mergeDebugResources-19:/values-pt/values-pt.xml",
+            "outputFile": "com.godot.game-mergeDebugResources-16:/values-pt/values-pt.xml",
             "map": [
                 {
                     "source": "/Users/zaheersyed/.gradle/caches/transforms-3/245f1aa0863a677574781ac0a1900f6e/transformed/core-1.8.0/res/values-pt/values-pt.xml",

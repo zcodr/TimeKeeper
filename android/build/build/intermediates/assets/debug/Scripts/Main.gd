@@ -6,8 +6,8 @@ var prayer_url
 @onready var prayer = $prayer_request
 
 @onready var title = $CanvasLayer/UI/Title
-@onready var text_field = $CanvasLayer/UI/VBoxContainer/TextField
-@onready var task_container = $CanvasLayer/UI/VBoxContainer/TaskContainer
+@onready var text_field = $CanvasLayer/UI/ScrollContainer/TaskContainer/TextField
+@onready var task_container = $CanvasLayer/UI/ScrollContainer/TaskContainer
 @onready var calendar_panel = $CanvasLayer/UI/CalendarPanel
 @onready var grid_container = $CanvasLayer/UI/CalendarPanel/GridContainer
 @onready var month_label = $CanvasLayer/UI/CalendarPanel/MonthLabel
@@ -35,12 +35,6 @@ var todays_timings = []
 var ByteBrew
 
 func _ready():
-	if Engine.has_singleton("ByteBrew"):
-		ByteBrew = Engine.get_singleton("ByteBrew")
-		if OS.get_name() == "Android":
-			ByteBrew.InitializeByteBrew("ihphSX0wQ", "/DLwS4KinVIiysP5RjcNfNVbubUixg1grqNy1pKQRI3xJYSfsi1CX4LYbmx1jrEC", Engine.get_version_info(), "0.0.0")
-			ByteBrew.StartPushNotifications()
-			
 	location.request_completed.connect(location_request)
 	send_request(location, location_url)
 	
@@ -156,6 +150,8 @@ func load_day(date : String):
 		title.text = day_of_week + "\n" + date_split[1] + "/" + date_split[2] + "/" + date_split[0]
 	
 	for i in task_container.get_children():
+		if i is LineEdit:
+			continue
 		i.queue_free()
 	if not Global.tasks.has(date):
 		Global.tasks[date] = []
@@ -163,7 +159,7 @@ func load_day(date : String):
 		var task_label = TASK_LABEL.instantiate()
 		task_container.add_child(task_label)
 		task_label.index = i
-		task_label.text = "- " + Global.tasks[date][i]
+		task_label.text.text = "- " + Global.tasks[date][i]
 		
 	date_selected = date
 

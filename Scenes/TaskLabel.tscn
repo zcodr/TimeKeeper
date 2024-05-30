@@ -36,7 +36,6 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="DeleteLabel" type="Button" parent="."]
-z_index = 4
 layout_mode = 2
 focus_mode = 0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)

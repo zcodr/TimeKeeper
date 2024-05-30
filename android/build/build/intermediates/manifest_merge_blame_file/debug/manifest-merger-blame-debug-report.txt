@@ -48,350 +48,156 @@
 31        android:version="0x400003" />
 31-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/src/debug/AndroidManifest.xml:13:111-137
 32
-33    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-33-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:12:5-82
-33-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:12:22-79
-34    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-34-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:13:5-79
-34-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:13:22-76
-35    <uses-permission android:name="android.permission.WAKE_LOCK" />
-35-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:14:5-68
-35-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:14:22-65
-36    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
-36-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:15:5-79
-36-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:15:22-76
-37    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-37-->[com.android.installreferrer:installreferrer:2.2] /Users/zaheersyed/.gradle/caches/transforms-3/3f126875648eeaba8ee56e9b21842e68/transformed/jetified-installreferrer-2.2/AndroidManifest.xml:9:5-110
-37-->[com.android.installreferrer:installreferrer:2.2] /Users/zaheersyed/.gradle/caches/transforms-3/3f126875648eeaba8ee56e9b21842e68/transformed/jetified-installreferrer-2.2/AndroidManifest.xml:9:22-107
-38
-39    <application
-39-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:18:5-52:19
-40        android:allowBackup="false"
-40-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:20:9-36
-41        android:appCategory="game"
-41-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:22:9-35
-42        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-42-->[androidx.core:core:1.8.0] /Users/zaheersyed/.gradle/caches/transforms-3/245f1aa0863a677574781ac0a1900f6e/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
-43        android:debuggable="true"
-44        android:extractNativeLibs="false"
-45        android:hasFragileUserData="false"
-45-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:24:9-43
-46        android:icon="@mipmap/icon"
-46-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:21:9-36
-47        android:isGame="true"
-47-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:23:9-30
-48        android:label="@string/godot_project_name_string"
-48-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:19:9-58
-49        android:requestLegacyExternalStorage="false" >
-49-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:25:9-53
-50        <activity
-50-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:33:9-50:20
-51            android:name="com.godot.game.GodotApp"
-51-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:34:13-37
-52            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|density|keyboard|navigation|screenLayout|uiMode"
-52-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:41:13-141
-53            android:excludeFromRecents="false"
-53-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:38:13-47
-54            android:exported="true"
-54-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:39:13-36
-55            android:label="@string/godot_project_name_string"
-55-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:35:13-62
-56            android:launchMode="singleInstancePerTask"
-56-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:37:13-55
-57            android:resizeableActivity="true"
-57-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:42:13-47
-58            android:screenOrientation="portrait"
-58-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:40:13-50
-59            android:theme="@style/GodotAppSplashTheme" >
-59-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:36:13-55
-60            <intent-filter>
-60-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:45:13-49:29
-61                <action android:name="android.intent.action.MAIN" />
-61-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:46:17-69
-61-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:46:25-66
-62
-63                <category android:name="android.intent.category.DEFAULT" />
-63-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:47:17-76
-63-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:47:27-73
-64                <category android:name="android.intent.category.LAUNCHER" />
-64-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:48:17-77
-64-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:48:27-74
-65            </intent-filter>
-66        </activity>
-67        <!-- Records the version of the Godot editor used for building -->
-68        <meta-data
-69            android:name="org.godotengine.editor.version"
-70            android:value="4.2.2.stable" /> <!-- Records the version of the Godot library -->
-71        <meta-data
-71-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:12:9-14:44
-72            android:name="org.godotengine.library.version"
-72-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:13:13-59
-73            android:value="4.2.2.stable" />
-73-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:14:13-41
-74
-75        <service android:name="org.godotengine.godot.GodotDownloaderService" />
-75-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:16:9-80
-75-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:16:18-77
+33    <application
+33-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:18:5-52:19
+34        android:allowBackup="false"
+34-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:20:9-36
+35        android:appCategory="game"
+35-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:22:9-35
+36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+36-->[androidx.core:core:1.8.0] /Users/zaheersyed/.gradle/caches/transforms-3/245f1aa0863a677574781ac0a1900f6e/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+37        android:debuggable="true"
+38        android:extractNativeLibs="false"
+39        android:hasFragileUserData="false"
+39-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:24:9-43
+40        android:icon="@mipmap/icon"
+40-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:21:9-36
+41        android:isGame="true"
+41-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:23:9-30
+42        android:label="@string/godot_project_name_string"
+42-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:19:9-58
+43        android:requestLegacyExternalStorage="false" >
+43-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:25:9-53
+44        <activity
+44-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:33:9-50:20
+45            android:name="com.godot.game.GodotApp"
+45-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:34:13-37
+46            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|density|keyboard|navigation|screenLayout|uiMode"
+46-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:41:13-141
+47            android:excludeFromRecents="false"
+47-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:38:13-47
+48            android:exported="true"
+48-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:39:13-36
+49            android:label="@string/godot_project_name_string"
+49-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:35:13-62
+50            android:launchMode="singleInstancePerTask"
+50-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:37:13-55
+51            android:resizeableActivity="true"
+51-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:42:13-47
+52            android:screenOrientation="portrait"
+52-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:40:13-50
+53            android:theme="@style/GodotAppSplashTheme" >
+53-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:36:13-55
+54            <intent-filter>
+54-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:45:13-49:29
+55                <action android:name="android.intent.action.MAIN" />
+55-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:46:17-69
+55-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:46:25-66
+56
+57                <category android:name="android.intent.category.DEFAULT" />
+57-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:47:17-76
+57-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:47:27-73
+58                <category android:name="android.intent.category.LAUNCHER" />
+58-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:48:17-77
+58-->/Users/zaheersyed/Desktop/TimeKeeper/android/build/AndroidManifest.xml:48:27-74
+59            </intent-filter>
+60        </activity>
+61        <!-- Records the version of the Godot editor used for building -->
+62        <meta-data
+63            android:name="org.godotengine.editor.version"
+64            android:value="4.2.2.stable" /> <!-- Records the version of the Godot library -->
+65        <meta-data
+65-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:12:9-14:44
+66            android:name="org.godotengine.library.version"
+66-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:13:13-59
+67            android:value="4.2.2.stable" />
+67-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:14:13-41
+68
+69        <service android:name="org.godotengine.godot.GodotDownloaderService" />
+69-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:16:9-80
+69-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:16:18-77
+70
+71        <activity
+71-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:18:9-22:75
+72            android:name="org.godotengine.godot.utils.ProcessPhoenix"
+72-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:19:13-70
+73            android:exported="false"
+73-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:20:13-37
+74            android:process=":phoenix"
+74-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:21:13-39
+75            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+75-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:22:13-72
 76
-77        <activity
-77-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:18:9-22:75
-78            android:name="org.godotengine.godot.utils.ProcessPhoenix"
-78-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:19:13-70
-79            android:exported="false"
-79-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:20:13-37
-80            android:process=":phoenix"
-80-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:21:13-39
-81            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-81-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:22:13-72
-82
-83        <provider
-83-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:24:9-32:20
-84            android:name="androidx.core.content.FileProvider"
-84-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:25:13-62
-85            android:authorities="com.zsyed.ontime.fileprovider"
-85-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:26:13-64
-86            android:exported="false"
-86-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:27:13-37
-87            android:grantUriPermissions="true" >
-87-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:28:13-47
-88            <meta-data
-88-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:29:13-31:64
-89                android:name="android.support.FILE_PROVIDER_PATHS"
-89-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:30:17-67
-90                android:resource="@xml/godot_provider_paths" />
-90-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:31:17-61
-91        </provider>
-92
-93        <meta-data
-93-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:18:9-20:74
-94            android:name="org.godotengine.plugin.v1.ByteBrew"
-94-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:19:13-62
-95            android:value="com.bytebrew.bytebrewgodotlibrary.ByteBrew" />
-95-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:20:13-71
-96
-97        <receiver
-97-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:22:9-31:20
-98            android:name="com.bytebrew.bytebrewgodotlibrary.ByteBrewBasicFCMBroadcastReceiver"
-98-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:23:13-95
+77        <provider
+77-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:24:9-32:20
+78            android:name="androidx.core.content.FileProvider"
+78-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:25:13-62
+79            android:authorities="com.zsyed.ontime.fileprovider"
+79-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:26:13-64
+80            android:exported="false"
+80-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:27:13-37
+81            android:grantUriPermissions="true" >
+81-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:28:13-47
+82            <meta-data
+82-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:29:13-31:64
+83                android:name="android.support.FILE_PROVIDER_PATHS"
+83-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:30:17-67
+84                android:resource="@xml/godot_provider_paths" />
+84-->[godot-lib.template_debug.aar] /Users/zaheersyed/.gradle/caches/transforms-3/1d2f4d75c034fbcf1699ed1528521307/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:31:17-61
+85        </provider>
+86        <provider
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+87            android:name="androidx.startup.InitializationProvider"
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:25:13-67
+88            android:authorities="com.zsyed.ontime.androidx-startup"
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:26:13-68
+89            android:exported="false" >
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:27:13-37
+90            <meta-data
+90-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+91                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+92                android:value="androidx.startup" />
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+93        </provider>
+94
+95        <receiver
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+96            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+96-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+97            android:directBootAware="false"
+97-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+98            android:enabled="true"
+98-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
 99            android:exported="true"
-99-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:24:13-36
-100            android:permission="com.google.android.c2dm.permission.SEND" >
-100-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:25:13-73
-101            <intent-filter android:priority="999" >
-101-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:26:13-30:29
-101-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:26:28-50
-102                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-102-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:27:17-81
-102-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:27:25-78
-103
-104                <category android:name="com.bytebrew.bytebrewpushnotifications.RECEIVED" />
-104-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:29:17-92
-104-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:29:27-89
-105            </intent-filter>
-106        </receiver>
-107        <receiver
-107-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:32:9-38:20
-108            android:name="com.bytebrew.bytebrewgodotlibrary.ByteBrewDismissPushReceiver"
-108-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:33:13-89
-109            android:exported="true" >
-109-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:34:13-36
-110            <intent-filter android:priority="999" >
-110-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:35:13-37:29
-110-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:35:28-50
-111                <category android:name="com.bytebrew.bytebrewpushnotifications.DISMISSED" />
-111-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:36:17-93
-111-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:36:27-90
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+100            android:permission="android.permission.DUMP" >
+100-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+101            <intent-filter>
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+102                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+102-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+102-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+103            </intent-filter>
+104            <intent-filter>
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+105                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+105-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+105-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+106            </intent-filter>
+107            <intent-filter>
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+108                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+108-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+108-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+109            </intent-filter>
+110            <intent-filter>
+110-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+111                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+111-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+111-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
 112            </intent-filter>
 113        </receiver>
-114
-115        <service
-115-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:40:9-43:72
-116            android:name="com.bytebrew.bytebrewgodotlibrary.ByteBrewPushService"
-116-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:41:13-81
-117            android:exported="true"
-117-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:42:13-36
-118            android:permission="android.permission.BIND_JOB_SERVICE" />
-118-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:43:13-69
-119        <!--
-120             FirebaseMessagingService performs security checks at runtime,
-121             but set to not exported to explicitly avoid allowing another app to call it.
-122        -->
-123        <service
-123-->[com.google.firebase:firebase-messaging:21.0.0] /Users/zaheersyed/.gradle/caches/transforms-3/6d037a6afa02a42a75d10058ee4bcbeb/transformed/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:28:9-35:19
-124            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-124-->[com.google.firebase:firebase-messaging:21.0.0] /Users/zaheersyed/.gradle/caches/transforms-3/6d037a6afa02a42a75d10058ee4bcbeb/transformed/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:29:13-82
-125            android:directBootAware="true"
-125-->[com.google.firebase:firebase-messaging:21.0.0] /Users/zaheersyed/.gradle/caches/transforms-3/6d037a6afa02a42a75d10058ee4bcbeb/transformed/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:30:13-43
-126            android:exported="false" >
-126-->[com.google.firebase:firebase-messaging:21.0.0] /Users/zaheersyed/.gradle/caches/transforms-3/6d037a6afa02a42a75d10058ee4bcbeb/transformed/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:31:13-37
-127            <intent-filter android:priority="-500" >
-127-->[com.google.firebase:firebase-messaging:21.0.0] /Users/zaheersyed/.gradle/caches/transforms-3/6d037a6afa02a42a75d10058ee4bcbeb/transformed/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:32:13-34:29
-127-->[com.google.firebase:firebase-messaging:21.0.0] /Users/zaheersyed/.gradle/caches/transforms-3/6d037a6afa02a42a75d10058ee4bcbeb/transformed/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:32:28-51
-128                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-128-->[com.google.firebase:firebase-messaging:21.0.0] /Users/zaheersyed/.gradle/caches/transforms-3/6d037a6afa02a42a75d10058ee4bcbeb/transformed/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:33:17-78
-128-->[com.google.firebase:firebase-messaging:21.0.0] /Users/zaheersyed/.gradle/caches/transforms-3/6d037a6afa02a42a75d10058ee4bcbeb/transformed/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:33:25-75
-129            </intent-filter>
-130        </service>
-131        <service
-131-->[com.google.firebase:firebase-messaging:21.0.0] /Users/zaheersyed/.gradle/caches/transforms-3/6d037a6afa02a42a75d10058ee4bcbeb/transformed/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:36:9-42:19
-132            android:name="com.google.firebase.components.ComponentDiscoveryService"
-132-->[com.google.firebase:firebase-messaging:21.0.0] /Users/zaheersyed/.gradle/caches/transforms-3/6d037a6afa02a42a75d10058ee4bcbeb/transformed/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:37:13-84
-133            android:directBootAware="true"
-133-->[com.google.firebase:firebase-common:19.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b8d3d3ba1238249ba92b7dbde8c44749/transformed/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
-134            android:exported="false" >
-134-->[com.google.firebase:firebase-messaging:21.0.0] /Users/zaheersyed/.gradle/caches/transforms-3/6d037a6afa02a42a75d10058ee4bcbeb/transformed/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:38:13-37
-135            <meta-data
-135-->[com.google.firebase:firebase-messaging:21.0.0] /Users/zaheersyed/.gradle/caches/transforms-3/6d037a6afa02a42a75d10058ee4bcbeb/transformed/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:39:13-41:85
-136                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-136-->[com.google.firebase:firebase-messaging:21.0.0] /Users/zaheersyed/.gradle/caches/transforms-3/6d037a6afa02a42a75d10058ee4bcbeb/transformed/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:40:17-119
-137                android:value="com.google.firebase.components.ComponentRegistrar" />
-137-->[com.google.firebase:firebase-messaging:21.0.0] /Users/zaheersyed/.gradle/caches/transforms-3/6d037a6afa02a42a75d10058ee4bcbeb/transformed/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:41:17-82
-138            <meta-data
-138-->[com.google.firebase:firebase-iid:21.0.0] /Users/zaheersyed/.gradle/caches/transforms-3/a3ebfdc062bcbb12d271eac0b4aae4dc/transformed/jetified-firebase-iid-21.0.0/AndroidManifest.xml:32:13-34:85
-139                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-139-->[com.google.firebase:firebase-iid:21.0.0] /Users/zaheersyed/.gradle/caches/transforms-3/a3ebfdc062bcbb12d271eac0b4aae4dc/transformed/jetified-firebase-iid-21.0.0/AndroidManifest.xml:33:17-96
-140                android:value="com.google.firebase.components.ComponentRegistrar" />
-140-->[com.google.firebase:firebase-iid:21.0.0] /Users/zaheersyed/.gradle/caches/transforms-3/a3ebfdc062bcbb12d271eac0b4aae4dc/transformed/jetified-firebase-iid-21.0.0/AndroidManifest.xml:34:17-82
-141            <meta-data
-141-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/zaheersyed/.gradle/caches/transforms-3/6584b347c4412c32d2b27f72af93a7c3/transformed/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:28:13-30:85
-142                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
-142-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/zaheersyed/.gradle/caches/transforms-3/6584b347c4412c32d2b27f72af93a7c3/transformed/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:29:17-115
-143                android:value="com.google.firebase.components.ComponentRegistrar" />
-143-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/zaheersyed/.gradle/caches/transforms-3/6584b347c4412c32d2b27f72af93a7c3/transformed/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:30:17-82
-144            <meta-data
-144-->[com.google.firebase:firebase-installations:16.3.3] /Users/zaheersyed/.gradle/caches/transforms-3/7c92712f03e8cd7647d686a62de5394e/transformed/jetified-firebase-installations-16.3.3/AndroidManifest.xml:17:13-19:85
-145                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-145-->[com.google.firebase:firebase-installations:16.3.3] /Users/zaheersyed/.gradle/caches/transforms-3/7c92712f03e8cd7647d686a62de5394e/transformed/jetified-firebase-installations-16.3.3/AndroidManifest.xml:18:17-127
-146                android:value="com.google.firebase.components.ComponentRegistrar" />
-146-->[com.google.firebase:firebase-installations:16.3.3] /Users/zaheersyed/.gradle/caches/transforms-3/7c92712f03e8cd7647d686a62de5394e/transformed/jetified-firebase-installations-16.3.3/AndroidManifest.xml:19:17-82
-147        </service>
-148
-149        <receiver
-149-->[com.google.firebase:firebase-iid:21.0.0] /Users/zaheersyed/.gradle/caches/transforms-3/a3ebfdc062bcbb12d271eac0b4aae4dc/transformed/jetified-firebase-iid-21.0.0/AndroidManifest.xml:37:9-44:20
-150            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-150-->[com.google.firebase:firebase-iid:21.0.0] /Users/zaheersyed/.gradle/caches/transforms-3/a3ebfdc062bcbb12d271eac0b4aae4dc/transformed/jetified-firebase-iid-21.0.0/AndroidManifest.xml:38:13-78
-151            android:exported="true"
-151-->[com.google.firebase:firebase-iid:21.0.0] /Users/zaheersyed/.gradle/caches/transforms-3/a3ebfdc062bcbb12d271eac0b4aae4dc/transformed/jetified-firebase-iid-21.0.0/AndroidManifest.xml:39:13-36
-152            android:permission="com.google.android.c2dm.permission.SEND" >
-152-->[com.google.firebase:firebase-iid:21.0.0] /Users/zaheersyed/.gradle/caches/transforms-3/a3ebfdc062bcbb12d271eac0b4aae4dc/transformed/jetified-firebase-iid-21.0.0/AndroidManifest.xml:40:13-73
-153            <intent-filter>
-153-->[com.google.firebase:firebase-iid:21.0.0] /Users/zaheersyed/.gradle/caches/transforms-3/a3ebfdc062bcbb12d271eac0b4aae4dc/transformed/jetified-firebase-iid-21.0.0/AndroidManifest.xml:41:13-43:29
-154                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-154-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:27:17-81
-154-->[bytebrew_godot.release.aar] /Users/zaheersyed/.gradle/caches/transforms-3/4dffe8cb3e0b90001d7dabce2896fa3f/transformed/jetified-bytebrew_godot.release/AndroidManifest.xml:27:25-78
-155            </intent-filter>
-156        </receiver>
-157
-158        <provider
-158-->[com.google.firebase:firebase-common:19.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b8d3d3ba1238249ba92b7dbde8c44749/transformed/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
-159            android:name="com.google.firebase.provider.FirebaseInitProvider"
-159-->[com.google.firebase:firebase-common:19.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b8d3d3ba1238249ba92b7dbde8c44749/transformed/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
-160            android:authorities="com.zsyed.ontime.firebaseinitprovider"
-160-->[com.google.firebase:firebase-common:19.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b8d3d3ba1238249ba92b7dbde8c44749/transformed/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
-161            android:exported="false"
-161-->[com.google.firebase:firebase-common:19.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b8d3d3ba1238249ba92b7dbde8c44749/transformed/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
-162            android:initOrder="100" />
-162-->[com.google.firebase:firebase-common:19.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b8d3d3ba1238249ba92b7dbde8c44749/transformed/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
-163
-164        <activity
-164-->[com.google.android.gms:play-services-base:17.0.0] /Users/zaheersyed/.gradle/caches/transforms-3/64372873fbe8eabc1c32edfb584ac0db/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
-165            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-165-->[com.google.android.gms:play-services-base:17.0.0] /Users/zaheersyed/.gradle/caches/transforms-3/64372873fbe8eabc1c32edfb584ac0db/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
-166            android:exported="false"
-166-->[com.google.android.gms:play-services-base:17.0.0] /Users/zaheersyed/.gradle/caches/transforms-3/64372873fbe8eabc1c32edfb584ac0db/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
-167            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-167-->[com.google.android.gms:play-services-base:17.0.0] /Users/zaheersyed/.gradle/caches/transforms-3/64372873fbe8eabc1c32edfb584ac0db/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
-168
-169        <meta-data
-169-->[com.google.android.gms:play-services-basement:17.0.0] /Users/zaheersyed/.gradle/caches/transforms-3/960c680b239f219d0d9ecd1c3a201b61/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
-170            android:name="com.google.android.gms.version"
-170-->[com.google.android.gms:play-services-basement:17.0.0] /Users/zaheersyed/.gradle/caches/transforms-3/960c680b239f219d0d9ecd1c3a201b61/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
-171            android:value="@integer/google_play_services_version" />
-171-->[com.google.android.gms:play-services-basement:17.0.0] /Users/zaheersyed/.gradle/caches/transforms-3/960c680b239f219d0d9ecd1c3a201b61/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
-172
-173        <provider
-173-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
-174            android:name="androidx.startup.InitializationProvider"
-174-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:25:13-67
-175            android:authorities="com.zsyed.ontime.androidx-startup"
-175-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:26:13-68
-176            android:exported="false" >
-176-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:27:13-37
-177            <meta-data
-177-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
-178                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-178-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
-179                android:value="androidx.startup" />
-179-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
-180        </provider>
-181
-182        <receiver
-182-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
-183            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-183-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
-184            android:directBootAware="false"
-184-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
-185            android:enabled="true"
-185-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
-186            android:exported="true"
-186-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
-187            android:permission="android.permission.DUMP" >
-187-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
-188            <intent-filter>
-188-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
-189                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-189-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
-189-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
-190            </intent-filter>
-191            <intent-filter>
-191-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
-192                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-192-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
-192-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
-193            </intent-filter>
-194            <intent-filter>
-194-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
-195                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-195-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
-195-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
-196            </intent-filter>
-197            <intent-filter>
-197-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
-198                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-198-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
-198-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/zaheersyed/.gradle/caches/transforms-3/b72b7b82f0312570e02e9e180c961d22/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
-199            </intent-filter>
-200        </receiver>
-201
-202        <service
-202-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/zaheersyed/.gradle/caches/transforms-3/734792e489dfb73699f8a505da82e4e2/transformed/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:29:9-35:19
-203            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-203-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/zaheersyed/.gradle/caches/transforms-3/734792e489dfb73699f8a505da82e4e2/transformed/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:30:13-103
-204            android:exported="false" >
-204-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/zaheersyed/.gradle/caches/transforms-3/734792e489dfb73699f8a505da82e4e2/transformed/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:31:13-37
-205            <meta-data
-205-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/zaheersyed/.gradle/caches/transforms-3/734792e489dfb73699f8a505da82e4e2/transformed/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:32:13-34:39
-206                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-206-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/zaheersyed/.gradle/caches/transforms-3/734792e489dfb73699f8a505da82e4e2/transformed/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:33:17-94
-207                android:value="cct" />
-207-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/zaheersyed/.gradle/caches/transforms-3/734792e489dfb73699f8a505da82e4e2/transformed/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:34:17-36
-208        </service>
-209        <service
-209-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/zaheersyed/.gradle/caches/transforms-3/face149de4a95d1bdde8332dadbe4627/transformed/jetified-transport-runtime-2.2.0/AndroidManifest.xml:26:9-30:19
-210            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-210-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/zaheersyed/.gradle/caches/transforms-3/face149de4a95d1bdde8332dadbe4627/transformed/jetified-transport-runtime-2.2.0/AndroidManifest.xml:27:13-117
-211            android:exported="false"
-211-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/zaheersyed/.gradle/caches/transforms-3/face149de4a95d1bdde8332dadbe4627/transformed/jetified-transport-runtime-2.2.0/AndroidManifest.xml:28:13-37
-212            android:permission="android.permission.BIND_JOB_SERVICE" >
-212-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/zaheersyed/.gradle/caches/transforms-3/face149de4a95d1bdde8332dadbe4627/transformed/jetified-transport-runtime-2.2.0/AndroidManifest.xml:29:13-69
-213        </service>
-214
-215        <receiver
-215-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/zaheersyed/.gradle/caches/transforms-3/face149de4a95d1bdde8332dadbe4627/transformed/jetified-transport-runtime-2.2.0/AndroidManifest.xml:32:9-34:40
-216            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-216-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/zaheersyed/.gradle/caches/transforms-3/face149de4a95d1bdde8332dadbe4627/transformed/jetified-transport-runtime-2.2.0/AndroidManifest.xml:33:13-132
-217            android:exported="false" />
-217-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/zaheersyed/.gradle/caches/transforms-3/face149de4a95d1bdde8332dadbe4627/transformed/jetified-transport-runtime-2.2.0/AndroidManifest.xml:34:13-37
-218    </application>
-219
-220</manifest>
+114    </application>
+115
+116</manifest>
