@@ -1,1 +1,2 @@
-Unreleased on play store. Only available on Android devices
+Only runnable on android devices
+Currently unreleased on Google play store
